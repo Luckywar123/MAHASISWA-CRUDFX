@@ -1,0 +1,20 @@
+// config/database.js
+const mysql = require("mysql");
+
+const db = mysql.createConnection({
+  host: "localhost", // Sesuaikan dengan host MySQL Anda
+  user: "root", // Sesuaikan dengan username MySQL Anda
+  password: "", // Sesuaikan dengan password MySQL Anda
+  database: "mahasiswa", // Sesuaikan dengan nama database yang digunakan
+  port: 3306,
+});
+
+db.connect((err) => {
+  if (err) {
+    console.error("Kesalahan koneksi database:", err);
+  } else {
+    console.log("Terhubung ke database MySQL");
+  }
+});
+
+module.exports = db;

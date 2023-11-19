@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Mahasiswa</title>
+  </head>
+
+  <body>
+    <h1>Detail Mahasiswa</h1>
+    <a href="/mahasiswa">Mahasiswa</a>
+    <ul>
+      <!-- new code -->
+      <li>
+        <%= data.nama %> - <%= data.jurusan %> - <%= data.angkatan %> -
+        <a href="/mahasiswa/<%= data.id %>">Detail</a> -
+        <a href="/mahasiswa/update/<%= data.id %>">Ubah</a> -
+        <a href="/mahasiswa/delete/<%= data.id %>">Hapus</a>
+      </li>
+    </ul>
+  </body>
+</html>

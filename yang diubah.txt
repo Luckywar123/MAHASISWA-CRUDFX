@@ -1,0 +1,10 @@
+- di routenya diubah ke get
+- tambah route di mahasiswaRoutes.js dan controllernya untuk form create dan update
+- tambah file edit.ejs untuk form update
+- detail.js tidak memakai foreach
+- tambah express.urlencoded di index.js
+- edit json
+- sql struktur pake yang ada di file aja
+- Port sesuain aja di database.js dan di index.js
+- Nambah Handling pada Router
+- Nambah Handling pada success
